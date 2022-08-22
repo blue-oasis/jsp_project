@@ -53,7 +53,9 @@
 		</div>
 	</main>
 
-	
+	<footer class="container">
+		<p>&copy; WebMarket</p>
+	</footer>
 
 </body>
 </html>
