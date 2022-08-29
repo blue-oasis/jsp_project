@@ -8,6 +8,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
 <meta charset="UTF-8">
 <title>상품 목록</title>
 </head>
@@ -35,6 +36,7 @@
                 
             %>
             <div class="col-md-4">
+            <img src="c:/upload/<%=product.getFilename()%>" style="width: 100%">
                 <h3><%=product.getPname()%></h3>
                 <p><%=product.getDescription()%>
                 <p><%=product.getUnitPrice()%>원

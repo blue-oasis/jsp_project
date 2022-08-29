@@ -4,6 +4,7 @@
 <html>
 
 <head> <!--부트스트랩 딜리버리 코드 menu에 통합-->
+<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
 
 	<meta charset="UTF-8">
 
