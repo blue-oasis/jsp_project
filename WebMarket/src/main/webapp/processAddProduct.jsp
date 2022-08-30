@@ -10,7 +10,7 @@
         request.setCharacterEncoding("UTF-8");
 
         String filename = "";
-        String realFolder = "C:\\upload"; //웹 어플리케이션 상 절대경로
+        String realFolder = "D:\\jsp_project\\WebMarket\\src\\main\\webapp\\resources\\image";//"C:\\upload"; //웹 어플리케이션 상 절대경로
         int maxSize = 5 * 1024 * 1024; //최대 업로드 될 파일 크기 5mb
         String encType = "utf-8"; //인코딩 유형
 
