@@ -15,7 +15,7 @@
         <a class="nav-link active" aria-current="page" href="./welcome.jsp">Home</a>
         <a class="nav-link" href="./products.jsp">Products</a>
         <a class="nav-link" href="./addProduct.jsp">Add Product</a>
-        <a class="nav-link disabled">Disabled</a>
+        <a class="nav-link" href="./editProduct.jsp?edit=update">상품 수정</a>
       </div>
     </div>
   </div>

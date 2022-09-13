@@ -28,9 +28,10 @@
 		}
 	%>
 	<jsp:include page="static/menu.jsp" />
-	<div class="jumbotron">
-		<div class="container">
-			<h1 class="display-3">주문 완료</h1>
+	<div class="p-5 mb-4 bg-light rounded-3">
+		<div class="container-fluid py-5">
+		    <h1 class="display-5 fw-bold">주문 완료</h1>
+		    <p class="col-md-8 fs-4"></p>
 		</div>
 	</div>
 	<div class="container">
