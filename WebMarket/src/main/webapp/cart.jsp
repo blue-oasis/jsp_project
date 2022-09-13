@@ -59,7 +59,7 @@
 				<td><%=product.getUnitPrice()%></td>
 				<td><%=product.getQuantity()%></td>
 				<td><%=total%></td>
-				<td><a href="./removeCart.jsp?id=<%=product.getProductId()%>" class="badge badge-danger">삭제</a></td>
+				<td><a href="./removeCart.jsp?id=<%=product.getProductId()%>" class="badge bg-danger">삭제</a></td>
 			</tr>
 			<%
 			 	}

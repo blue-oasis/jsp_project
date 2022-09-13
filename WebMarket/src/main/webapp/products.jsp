@@ -51,8 +51,7 @@
             </div>
             <%
                 }
-           
-         	%>
+           	%>
          
             if (rs != null) {
             	rs.close();

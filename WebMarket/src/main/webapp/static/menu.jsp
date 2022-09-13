@@ -16,6 +16,7 @@
         <a class="nav-link" href="./products.jsp">Products</a>
         <a class="nav-link" href="./addProduct.jsp">Add Product</a>
         <a class="nav-link" href="./editProduct.jsp?edit=update">상품 수정</a>
+        <a class="nav-link" href="./editProduct.jsp?edit=delete">상품 삭제</a>
       </div>
     </div>
   </div>
