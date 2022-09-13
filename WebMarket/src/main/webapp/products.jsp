@@ -3,6 +3,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="dto.Product" %>
 <%@ page import="dao.ProductRepository" %>
+<%@ page import="java.sql.*" %>
 <jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
 
 <!DOCTYPE html>
@@ -30,22 +31,37 @@
 
     <div class="container">
         <div class="row" align="center">
-            <%
-                for(int i = 0; i<listOfProducts.size(); i++) {
-                    Product product = listOfProducts.get(i);
+        	<%@ include file="dbconn.jsp" %>
+           <%
+                PreparedStatement pstmt = null;
+           		ResultSet rs = null;
+           		String sql = "select * from product";
+           		pstmt = conn.prepareStatement(sql);
+           		rs = pstmt.executeQuery();
+           		while (rs.next()) {
                 
             %>
             <div class="col-md-4">
-            <img src="c:/upload/<%=product.getFilename()%>" style="width: 100%">
-                <h3><%=product.getPname()%></h3>
-                <p><%=product.getDescription()%>
-                <p><%=product.getUnitPrice()%>원
-                <p> <a href="./product.jsp?id=<%=product.getProductId()%>"
+            <img src="c:/upload/<%=rs.getString("p_fileName")%>" style="width: 100%">
+                <h3><%=rs.getString("p_name")%></h3>
+                <p><%=rs.getString("p_descripition")%>
+                <p><%=rs.getString("p_UnitPrice")%>원
+                <p> <a href="./product.jsp?id=<%=rs.getString("p_id")%>"
                 class="btn btn-secondary" role="button"> 상세 정보 &raquo;></a>
             </div>
             <%
                 }
-            %>
+           
+         	%>
+            if (rs != null) {
+            	rs.close();
+            }
+            if (pstmt != null) {
+             	pstmt.close();
+             }
+            if (conn != null) {
+            conn.close();
+          	%>
         </div>
         <hr>
     </div>
