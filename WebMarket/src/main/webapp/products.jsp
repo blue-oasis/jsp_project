@@ -44,7 +44,7 @@
             <div class="col-md-4">
             <img src="c:/upload/<%=rs.getString("p_fileName")%>" style="width: 100%">
                 <h3><%=rs.getString("p_name")%></h3>
-                <p><%=rs.getString("p_descripition")%>
+                <p><%=rs.getString("p_description")%>
                 <p><%=rs.getString("p_UnitPrice")%>원
                 <p> <a href="./product.jsp?id=<%=rs.getString("p_id")%>"
                 class="btn btn-secondary" role="button"> 상세 정보 &raquo;></a>
@@ -53,6 +53,7 @@
                 }
            
          	%>
+         
             if (rs != null) {
             	rs.close();
             }
