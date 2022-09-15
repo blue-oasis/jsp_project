@@ -48,7 +48,7 @@
 	  		<div class="form-group row">
 	  			<label class="col-sm-2 ">비밀번호 확인</label>
 	  				<div class="col-sm-3 mb-2">
-	  					<input name="password_confirm" type="password	" class="form-control" placeholder="password confirm">
+	  					<input name="password_confirm" type="password" class="form-control" placeholder="password confirm">
 	  					</div>
 	  				</div>
 	  		<div class="form-group row">
