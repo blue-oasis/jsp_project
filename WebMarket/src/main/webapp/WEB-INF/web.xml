@@ -5,4 +5,14 @@
 		<location>/exceptionNoPage.jsp</location>
 	</error-page>
 	<url-pattern>/editProduct.jsp</url-pattern>
+	
+	<servlet>
+			<servlet-name>BoradController</servlet-name>
+			<servlet-class>controller.BoradController</servlet-class>
+		</servlet>
+		
+		<servlet-mapping>
+			<servlet-name>BoradController</servlet-name>
+			<url-pattern>*.do</url-pattern>
+		</servlet-mapping>
 </web-app>
