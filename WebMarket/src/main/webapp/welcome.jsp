@@ -9,7 +9,7 @@
 	<meta charset="UTF-8">
 
 <title>welcome</title>
-</head>
+</head>	
 <body>
 	<%-- herder(nav) --%>
 	<%@ include file="static/menu.jsp" %>

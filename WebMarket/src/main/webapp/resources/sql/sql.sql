@@ -17,4 +17,6 @@ create table if not exists product(
 	insert into product values('P1236', 'Galaxy Tab S', 900000, '212.8*125.6*6.6mm, Super AMOLED display, octa-Core processor',
 	'Tablet', 'Samsung', 1000, 'new', 'P1236.png');
 	
+	insert into board values(0, 'test', 'test', 'test', 'test', '2022/09/19', '0', '1234');
+	
 	

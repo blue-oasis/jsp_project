@@ -31,13 +31,13 @@ public class BoardDAO {
 		String sql;
 		
 		if (items == null && text == null)
-			sql = "select  count(*) from board";
+			sql = "select * from board order by num desc";
 		else
-			sql = "SELECT   count(*) FROM board where " + items + " like '%" + text + "%'";
+			sql = "SELECT * FROM board where " + items + " like '%" + text + "%' order by num desc";
 		
 		try {
 			conn = DBConnection.getConnection();
-			pstmt = conn.prepareStatement(sql);
+			pstmt = conn.prepareStatement(sql, ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.TYPE_FORWARD_ONLY);
 			rs = pstmt.executeQuery();
 
 			if (rs.next()) 
